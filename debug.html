@@ -15,28 +15,8 @@
 	</head>
 	<body class="enyo-unselectable">
 		<script>
-			var l = new enyo.Control;
-			l.createComponent({
-				kind: Tweet,
-				icon: "icon.png",
-				handle: "unwiredben",
-				text: "First tweet"});
-			l.createComponent({
-				kind: Tweet,
-				icon: "icon.png",
-				handle: "unwiredben",
-				text: "Second tweet"});
-			l.createComponent({
-				kind: Tweet,
-				icon: "icon.png",
-				handle: "unwiredben",
-				text: "Third tweet"});
-			l.createComponent({
-				kind: Tweet,
-				icon: "icon.png",
-				handle: "unwiredben",
-				text: "Forth tweet"});
-			l.renderInto(document.body);
+			var tweetApp = new TweetApp();
+			tweetApp.renderInto(document.body)
 		</script>
 	</body>
 </html>
