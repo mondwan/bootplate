@@ -15,11 +15,28 @@
 	</head>
 	<body class="enyo-unselectable">
 		<script>
-			var t = new Tweet({
+			var l = new enyo.Control;
+			l.createComponent({
+				kind: Tweet,
 				icon: "icon.png",
 				handle: "unwiredben",
-				text: "This is my tweet"});
-			t.renderInto(document.body);
+				text: "First tweet"});
+			l.createComponent({
+				kind: Tweet,
+				icon: "icon.png",
+				handle: "unwiredben",
+				text: "Second tweet"});
+			l.createComponent({
+				kind: Tweet,
+				icon: "icon.png",
+				handle: "unwiredben",
+				text: "Third tweet"});
+			l.createComponent({
+				kind: Tweet,
+				icon: "icon.png",
+				handle: "unwiredben",
+				text: "Forth tweet"});
+			l.renderInto(document.body);
 		</script>
 	</body>
 </html>
