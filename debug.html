@@ -15,19 +15,11 @@
 	</head>
 	<body class="enyo-unselectable">
 		<script>
-			var list = new enyo.Control({
-			tag: "div",
-			components: [
-				{ tag: "p", content: "The Additive Primary Colors" },
-				{ tag: "ul", components: [
-				{ tag: "li", name: "red", content: "red" },
-				{ tag: "li", name: "green", content: "green" },
-				{ tag: "li", name: "blue", content: "blue" } ] } ]
-			});
-			list.renderInto(document.body);
-			list.$.red.applyStyle("color", "red");
-			list.$.green.applyStyle("color", "green");
-			list.$.blue.applyStyle("color", "blue");
+			var t = new Tweet({
+				icon: "icon.png",
+				handle: "unwiredben",
+				text: "This is my tweet"});
+			t.renderInto(document.body);
 		</script>
 	</body>
 </html>
